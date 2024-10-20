@@ -7,7 +7,7 @@ function UserHeader({ cartCount, user }) {
     <header className="premium-header">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         {/* Brand/logo */}
-        <Link className="navbar-brand premium-brand" to="/">Shopping Cart</Link>
+        <Link className="navbar-brand premium-brand" to="/">King Cart</Link>
 
         {/* Left-aligned items (Cart and Orders) */}
         <ul className="navbar-nav mr-auto">
