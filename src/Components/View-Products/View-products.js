@@ -85,7 +85,12 @@ const ProductList = ({ setCartCount }) => {
                 </div>
 
                 {loading ? (
-                    <div className="loading-spinner"></div>
+                     <div className="loading-spinner">
+                    
+                     <div className="spinner-segment"></div>
+                     <div className="spinner-segment"></div>
+                     <div className="spinner-segment"></div>
+                   </div>
                 ) : error ? (
                     <div className="error-message">{error}</div>
                 ) : (
@@ -129,7 +134,12 @@ const ProductList = ({ setCartCount }) => {
                                                     user ? (
                                                         <button className="btn add-to-cart-btn" onClick={() => addToCart(product._id)}> 
                                                             {isAddingToCart ? (
-                                                                <span className="loading-spinner"></span>
+                                                                <div className="loading-spinner">
+                                                                
+                                                                <div className="spinner-segment"></div>
+                                                                <div className="spinner-segment"></div>
+                                                                <div className="spinner-segment"></div>
+                                                              </div>
                                                             ) : (
                                                                 <i className="fas fa-shopping-cart"> Add to Cart</i>
                                                             )}
